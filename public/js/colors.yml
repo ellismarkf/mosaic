@@ -1,185 +1,61 @@
--
-  char: 'a'
-  color_value: '#9472ea'
--
-  char: 'b'
-  color_value: '#0530d9'
--
-  char: 'c'
-  color_value: '#dd114d'
--
-  char: 'd'
-  color_value: '#7c9ca6'
--
-  char: 'e'
-  color_value: '#4ad5a7'
--
-  char: 'f'
-  color_value: '#80f23b'
--
-  char: 'g'
-  color_value: '#5552cf'
--
-  char: 'h'
-  color_value: '#9b4c27'
--
-  char: 'i'
-  color_value: '#2c5ed2'
--
-  char: 'j'
-  color_value: '#fa0ff5'
--
-  char: 'k'
-  color_value: '#5b9e3f'
--
-  char: 'l'
-  color_value: '#f571b3'
--
-  char: 'm'
-  color_value: '#c82e2a'
--
-  char: 'n'
-  color_value: '#fa1e9f'
--
-  char: 'o'
-  color_value: '#9d4242'
--
-  char: 'p'
-  color_value: '#b8ab8a'
--
-  char: 'q'
-  color_value: '#cfd396'
--
-  char: 'r'
-  color_value: '#55491a'
--
-  char: 's'
-  color_value: '#20f88f'
--
-  char: 't'
-  color_value: '#FF7F50'
--
-  char: 'u'
-  color_value: '#AFEEEE'
--
-  char: 'v'
-  color_value: '#DCDCDC'
--
-  char: 'w'
-  color_value: '#FF8C00'
--
-  char: 'x'
-  color_value: '#DAA520'
--
-  char: 'y'
-  color_value: '#9ACD32'
--
-  char: 'z'
-  color_value: '#BA55D3'
--
-  char: 'A'
-  color_value: '#98FB98'
--
-  char: 'B'
-  color_value: '#9400D3'
--
-  char: 'C'
-  color_value: '#FF69B4'
--
-  char: 'D'
-  color_value: '#228B22'
--
-  char: 'E'
-  color_value: '#DC143C'
--
-  char: 'F'
-  color_value: '#B0C4DE'
--
-  char: 'G'
-  color_value: '#A0522D'
--
-  char: 'H'
-  color_value: '#5F9EA0'
--
-  char: 'I'
-  color_value: '#FFC0CB'
--
-  char: 'J'
-  color_value: '#6A5ACD'
--
-  char: 'K'
-  color_value: '#32CD32'
--
-  char: 'L'
-  color_value: '#FFA07A'
--
-  char: 'M'
-  color_value: '#008B8B'
--
-  char: 'N'
-  color_value: '#8FBC8F'
--
-  char: 'O'
-  color_value: '#B8860B'
--
-  char: 'P'
-  color_value: '#FF6347'
--
-  char: 'Q'
-  color_value: '#FFFF00'
--
-  char: 'R'
-  color_value: '#1E90FF'
--
-  char: 'S'
-  color_value: '#0000FF'
--
-  char: 'T'
-  color_value: '#0000CD'
--
-  char: 'U'
-  color_value: '#191970'
--
-  char: 'V'
-  color_value: '#191970'
--
-  char: 'W'
-  color_value: '#800000'
--
-  char: 'X'
-  color_value: '#DDA0DD'
--
-  char: 'Y'
-  color_value: '#2F4F4F'
--
-  char: 'Z'
-  color_value: '#48D1CC'
--
-  char: '.'
-  color_value: '#FAA460'
--
-  char: ','
-  color_value: '#DC143C'
--
-  char: ':'
-  color_value: '#BA55D3'
--
-  char: ';'
-  color_value: '#ADFF2F'
--
-  char: '!'
-  color_value: '#9ACD32'
--
-  char: '?'
-  color_value: '#B22222'
--
-  char: '-'
-  color_value: '#B0C4DE'
--
-  char: '('
-  color_value: '#ADFF2F'
--
-  char: ')'
-  color_value: '#9932CC'
-
-
+'a': '#9472ea'
+'b': '#0530d9'
+'c': '#dd114d'
+'d': '#7c9ca6'
+'e': '#4ad5a7'
+'f': '#80f23b'
+'g': '#5552cf'
+'h': '#9b4c27'
+'i': '#2c5ed2'
+'j': '#fa0ff5'
+'k': '#5b9e3f'
+'l': '#f571b3'
+'m': '#c82e2a'
+'n': '#fa1e9f'
+'o': '#9d4242'
+'p': '#b8ab8a'
+'q': '#cfd396'
+'r': '#55491a'
+'s': '#20f88f'
+'t': '#FF7F50'
+'u': '#AFEEEE'
+'v': '#DCDCDC'
+'w': '#FF8C00'
+'x': '#DAA520'
+'y': '#9ACD32'
+'z': '#BA55D3'
+'A': '#98FB98'
+'B': '#9400D3'
+'C': '#FF69B4'
+'D': '#228B22'
+'E': '#DC143C'
+'F': '#B0C4DE'
+'G': '#A0522D'
+'H': '#5F9EA0'
+'I': '#FFC0CB'
+'J': '#6A5ACD'
+'K': '#32CD32'
+'L': '#FFA07A'
+'M': '#008B8B'
+'N': '#8FBC8F'
+'O': '#B8860B'
+'P': '#FF6347'
+'Q': '#FFFF00'
+'R': '#1E90FF'
+'S': '#0000FF'
+'T': '#0000CD'
+'U': '#191970'
+'V': '#191970'
+'W': '#800000'
+'X': '#DDA0DD'
+'Y': '#2F4F4F'
+'Z': '#48D1CC'
+'.': '#FAA460'
+',': '#DC143C'
+':': '#BA55D3'
+';': '#ADFF2F'
+'!': '#9ACD32'
+'?': '#B22222'
+'-': '#B0C4DE'
+'(': '#ADFF2F'
+')': '#9932CC'

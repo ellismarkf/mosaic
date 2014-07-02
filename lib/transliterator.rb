@@ -1,14 +1,17 @@
 require 'pg'
 
 # entities
-require_relative 'mosaic/entities/user.rb'
-require_relative 'mosaic/entities/mosaic.rb'
-require_relative 'mosaic/entities/museum.rb'
+require_relative 'transliterator/entities/user.rb'
+require_relative 'transliterator/entities/mosaic.rb'
+require_relative 'transliterator/entities/museum.rb'
 
 #database
-require_relative 'mosaic/databases/database.rb'
+require_relative 'transliterator/databases/database.rb'
 
 #scripts
-require_relative 'mosaic/scripts/capture_text.rb'
+require_relative 'transliterator/scripts/capture_text.rb'
+
+#assets
+require_relative 'color_hash.rb'
 
 Mosaic::ORM.new

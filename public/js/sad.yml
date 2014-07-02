@@ -1,156 +1,61 @@
--
-  letter: 'a'
-  color_value:
--
-  letter: 'b'
-  color_value:
--
-  letter: 'c'
-  color_value:
--
-  letter: 'd'
-  color_value:
--
-  letter: 'e'
-  color_value:
--
-  letter: 'f'
-  color_value:
--
-  letter: 'g'
-  color_value:
--
-  letter: 'h'
-  color_value:
--
-  letter: 'i'
-  color_value:
--
-  letter: 'j'
-  color_value:
--
-  letter: 'k'
-  color_value:
--
-  letter: 'l'
-  color_value:
--
-  letter: 'm'
-  color_value:
--
-  letter: 'n'
-  color_value:
--
-  letter: 'o'
-  color_value:
--
-  letter: 'p'
-  color_value:
--
-  letter: 'q'
-  color_value:
--
-  letter: 'r'
-  color_value:
--
-  letter: 's'
-  color_value:
--
-  letter: 't'
-  color_value:
--
-  letter: 'u'
-  color_value:
--
-  letter: 'v'
-  color_value:
--
-  letter: 'w'
-  color_value:
--
-  letter: 'x'
-  color_value:
--
-  letter: 'y'
-  color_value:
--
-  letter: 'z'
-  color_value:
--
-  letter: 'A'
-  color_value:
--
-  letter: 'B'
-  color_value:
--
-  letter: 'C'
-  color_value:
--
-  letter: 'D'
-  color_value:
--
-  letter: 'E'
-  color_value:
--
-  letter: 'F'
-  color_value:
--
-  letter: 'G'
-  color_value:
--
-  letter: 'H'
-  color_value:
--
-  letter: 'I'
-  color_value:
--
-  letter: 'J'
-  color_value:
--
-  letter: 'K'
-  color_value:
--
-  letter: 'L'
-  color_value:
--
-  letter: 'M'
-  color_value:
--
-  letter: 'N'
-  color_value:
--
-  letter: 'O'
-  color_value:
--
-  letter: 'P'
-  color_value:
--
-  letter: 'Q'
-  color_value:
--
-  letter: 'R'
-  color_value:
--
-  letter: 'S'
-  color_value:
--
-  letter: 'T'
-  color_value:
--
-  letter: 'U'
-  color_value:
--
-  letter: 'V'
-  color_value:
--
-  letter: 'W'
-  color_value:
--
-  letter: 'X'
-  color_value:
--
-  letter: 'Y'
-  color_value:
--
-  letter: 'Z'
-  color_value:
+'a': '#9472ea'
+'b': '#0530d9'
+'c': '#dd114d'
+'d': '#7c9ca6'
+'e': '#4ad5a7'
+'f': '#80f23b'
+'g': '#5552cf'
+'h': '#9b4c27'
+'i': '#2c5ed2'
+'j': '#fa0ff5'
+'k': '#5b9e3f'
+'l': '#f571b3'
+'m': '#c82e2a'
+'n': '#fa1e9f'
+'o': '#9d4242'
+'p': '#b8ab8a'
+'q': '#cfd396'
+'r': '#55491a'
+'s': '#20f88f'
+'t': '#FF7F50'
+'u': '#AFEEEE'
+'v': '#DCDCDC'
+'w': '#FF8C00'
+'x': '#DAA520'
+'y': '#9ACD32'
+'z': '#BA55D3'
+'A': '#98FB98'
+'B': '#9400D3'
+'C': '#FF69B4'
+'D': '#228B22'
+'E': '#DC143C'
+'F': '#B0C4DE'
+'G': '#A0522D'
+'H': '#5F9EA0'
+'I': '#FFC0CB'
+'J': '#6A5ACD'
+'K': '#32CD32'
+'L': '#FFA07A'
+'M': '#008B8B'
+'N': '#8FBC8F'
+'O': '#B8860B'
+'P': '#FF6347'
+'Q': '#FFFF00'
+'R': '#1E90FF'
+'S': '#0000FF'
+'T': '#0000CD'
+'U': '#191970'
+'V': '#191970'
+'W': '#800000'
+'X': '#DDA0DD'
+'Y': '#2F4F4F'
+'Z': '#48D1CC'
+'.': '#FAA460'
+',': '#DC143C'
+':': '#BA55D3'
+';': '#ADFF2F'
+'!': '#9ACD32'
+'?': '#B22222'
+'-': '#B0C4DE'
+'(': '#ADFF2F'
+')': '#9932CC'

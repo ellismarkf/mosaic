@@ -2,7 +2,7 @@ require 'pg'
 require 'pry-byebug'
 require 'rspec'
 
-module Mosaic
+module Transliterator
   class ORM
     def initialize
       @db = PG.connect(host: 'localhost', dbname: 'transliterator')
