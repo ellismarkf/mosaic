@@ -5,7 +5,7 @@ require 'rspec'
 module Mosaic
   class ORM
     def initialize
-      @db = PG.connect(host: 'localhost', dbname: 'mosaic')
+      @db = PG.connect(host: 'localhost', dbname: 'transliterator')
       build_tables
     end
 
