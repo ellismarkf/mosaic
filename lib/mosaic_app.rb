@@ -1,0 +1,5 @@
+require_relative 'database.rb'
+require_relative 'user.rb'
+require_relative 'mosaic.rb'
+require_relative 'museum.rb'
+require_relative 'capture_text.rb'
