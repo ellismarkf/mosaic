@@ -11,25 +11,34 @@ module Mosaic
 
     def build_tables
       @db.exec(%q[
-        CREATE TABLE IF NOT EXIST users (
+        CREATE TABLE IF NOT EXISTS users (
           id serial NOT NULL PRIMARY KEY,
           username varchar(30),
-          password_digest text,
-          museum_id integer REFERENCES museums(id)
+          password_digest text
         )])
 
       @db.exec(%q[
-        CREATE TABLE IF NOT EXIST mosaics (
+        CREATE TABLE IF NOT EXISTS mosaics (
           id serial NOT NULL PRIMARY KEY,
           user_id integer REFERENCES users(id),
           name text
         )])
 
       @db.exec(%q[
-        CREATE TABLE IF NOT EXIST museums (
+        CREATE TABLE IF NOT EXISTS museums (
+          id serial NOT NULL PRIMARY KEY,
+          user_id integer REFERENCES users(id)
+        )])
+
+      @db.exec(%q[
+        CREATE TABLE IF NOT EXISTS collections (
           id serial NOT NULL PRIMARY KEY,
           user_id integer REFERENCES users(id),
+          name text,
+          mosaic_id integer REFERENCES mosaics(id),
+          museum_id integer REFERENCES museums(id)
         )])
+
     end
 
 
