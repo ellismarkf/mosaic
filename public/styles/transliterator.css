@@ -199,11 +199,11 @@ th {
 
 .frame {
   width: 80%;
-  margin: 65px auto 0px;
+  margin: 65px auto 40px;
 
 }
 
-.cell {
+.square {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -215,6 +215,24 @@ th {
   height: 10px;
   float: left;
   border-radius: 1000px;
+}
+.triangle_down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 14px solid red;
+  margin: 0px -13px;
+}
+.triangle_up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 14px solid red;
+  margin-bottom: -4px;
 }
 .small {
   width: 10px;
@@ -228,6 +246,12 @@ th {
   width: 175px;
   height: 175px;
 }
+.magical {
+  display: inline-block;
+  float: left;
+  opacity: .7;
+  margin: -1px;
+}
 
 .controlPanel {
   width: 25%;
@@ -237,7 +261,7 @@ th {
   background-color: #42a7d3;
   box-shadow: 1px 0px 10px 1px #ccc;
 }
-.controlPanel h1 {
+.controlPanel h1, .title {
   font-family: 'Merriweather', serif;
   font-weight: 900;
   color: white;
@@ -250,7 +274,7 @@ th {
   display: block;
   width: 75%;
   margin: 0 auto 40px;
-  height: 300px;
+  height: 200px;
   border-radius: 5px;
   max-width: 75%;
   font-family: 'Merriweather', serif;
@@ -261,9 +285,27 @@ th {
 }
 .controlPanel select {
   display: block;
-  width: 30%;
+  width: 80%;
   margin: 0 auto 15px;
+  background: white;
+  font-family: 'Merriweather', serif;
+  font-size: .8rem;
+  border: none;
+  padding: 10px;
+  height: 35px;
+  color: #27586b;
+  box-shadow: 1px 1px 1px #27586b;
 }
+
+.checkbox {
+  display: block;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #27586b;
+}
+
 .canvas {
   width: 75%;
   float: right;
@@ -274,6 +316,85 @@ th {
   color: #42a7d3;
   text-align: center;
 }
+.blue {
+  background-color: #42a7d3;
+  background-image: url('/cloudBorder-up.png');
+  background-position: top;
+  background-repeat: repeat-x;
+}
+.main {
+  width: 40%;
+  margin: 200px auto 0px;
+  display: block;
+}
+.signup:first-child {
+    box-shadow: 1px 1px 1px #27586b;
+}
+.signup input {
+  display: block;
+  margin: 0 auto;
+  width: 75%
+}
+.signup input[type="text"], .signup input[type="password"] {
+  font-family: 'Merriweather', serif;
+  font-size: .8rem;
+  border: none;
+  padding: 10px;
+  height: 35px;
+  color: #27586b;
+  box-shadow: 1px 1px 1px #27586b;
+}
+.signup input:first-child {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.signup input:nth-child(2) {
+  border-radius: 0px 0px 10px 10px;
+}
+.signup input:focus {
+  outline: none;
+  background-color:
+}
+.signup input[type="submit"] {
+  margin-top: 30px;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 15px;
+  color: white;
+  text-shadow: 1px 1px 1px #27586b;
+  /*background-color: white;*/
+  border-radius: 10px;
+  width: 50%;
+  border: none;
+  box-shadow: 1px 1px 1px #27586b;
+  background: blue; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ff2d2d 0%, #fcbd7e 17%, #fff67f 34%, #93f279 51%, #75a2ea 68%, #6368e8 85%, #9b05ff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff2d2d), color-stop(17%,#fcbd7e), color-stop(34%,#fff67f), color-stop(51%,#93f279), color-stop(68%,#75a2ea), color-stop(85%,#6368e8), color-stop(100%,#9b05ff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #ff2d2d 0%,#fcbd7e 17%,#fff67f 34%,#93f279 51%,#75a2ea 68%,#6368e8 85%,#9b05ff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #ff2d2d 0%,#fcbd7e 17%,#fff67f 34%,#93f279 51%,#75a2ea 68%,#6368e8 85%,#9b05ff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #ff2d2d 0%,#fcbd7e 17%,#fff67f 34%,#93f279 51%,#75a2ea 68%,#6368e8 85%,#9b05ff 100%); /* IE10+ */
+  background: linear-gradient(135deg, #ff2d2d 0%,#fcbd7e 17%,#fff67f 34%,#93f279 51%,#75a2ea 68%,#6368e8 85%,#9b05ff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2d2d', endColorstr='#9b05ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.signout input {
+  display: block;
+  width: 80%;
+  margin: 0 auto 15px;
+  background: white;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: .8rem;
+  border: none;
+  padding: 10px;
+  height: 35px;
+  color: #27586b;
+  box-shadow: 1px 1px 1px #27586b;
+  border-radius: 5px;
+  margin-top: 45px;
+}
+
+
 
 
 

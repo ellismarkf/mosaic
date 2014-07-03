@@ -4,11 +4,21 @@
  -->
 <% if !@uncolored_text.empty? %>
   <div class="cf frame">
-    <% @uncolored_text.each do |letter| %>
-      <span class="cell" style="background: <%= @colors[letter] %>"></span>
+    <% if @shape == 'triangle' %>
+      <% @uncolored_text.each_with_index do |letter, index| %>
+        <% if !index.even? %>
+          <span class="triangle_up" style="border-bottom-color: <%= @colors[letter] %> "></span>
+        <% else %>
+          <span class="triangle_down" style="border-top-color: <%= @colors[letter] %> "></span>
+        <% end %>
+      <% end %>
+    <% else %>
+      <% @uncolored_text.each do |letter| %>
+        <span class="<%= @shape %> <%= @magical %> <%= @size %>" style="background: <%= @colors[letter] %>"></span>
+      <% end %>
     <% end %>
   </div>
-  <div class="quote">
+<!--   <div class="quote">
     <h2><%= @original_text %></h2>
-  </div>
+  </div> -->
 <% end %>

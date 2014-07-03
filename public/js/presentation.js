@@ -9,7 +9,10 @@
     // for loop through array
       // pass each letter to renderSqaure(letter)
   };
-  var renderSquare = function(letter) {};
+  var renderSquare = function(letter) {
+    // determin color from window.colors based on letter
+    var newHTML = "<span style='background" + colorHex+ "'></span>"
+  };
 
 
 
