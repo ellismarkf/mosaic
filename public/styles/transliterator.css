@@ -199,7 +199,7 @@ th {
 
 .frame {
   width: 80%;
-  margin: 50px auto 0px;
+  margin: 65px auto 0px;
 
 }
 
@@ -227,12 +227,18 @@ th {
   text-align: center;
 }
 
-.controlPanel input[type=textarea] {
+.controlPanel textarea {
   display: block;
   width: 75%;
   margin: 0 auto 40px;
   height: 300px;
   border-radius: 5px;
+  max-width: 75%;
+  font-family: 'Merriweather', serif;
+  font-size: .8rem;
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px #26589b;
 }
 .controlPanel input.placeholder {
   font-family: 'Merriweather', serif;
