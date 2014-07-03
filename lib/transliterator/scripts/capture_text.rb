@@ -11,7 +11,7 @@ module Transliterator
   end
 end
 
-get '/colors' do
-  @text_hash = TextCapture.run
-  erb :view
-end
+# get '/colors' do
+#   @text_hash = TextCapture.run
+#   erb :view
+# end

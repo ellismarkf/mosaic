@@ -9,7 +9,7 @@ set :bind, '0.0.0.0'
 configure do
   stored = Transliterator::ColorHash.new
   # binding.pry
-  @@colors = stored.colors
+  @@colors = stored.spring
 end
 
 get '/' do
