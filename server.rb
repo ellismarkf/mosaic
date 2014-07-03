@@ -16,22 +16,37 @@ get '/' do
   erb :painter
 end
 
-get '/translated' do
+# get '/translated' do
+#   @uncolored_text = []
+#   @colors = @@colors
+#   erb :painter
+# end
+
+# post '/translated' do
+#   @uncolored_text = params[:uncolored_text].gsub(/\s/,"").split(//)
+#   @colors = @@colors
+#   erb :painter
+# end
+
+get '/paint' do
   @uncolored_text = []
   @colors = @@colors
-  erb :painter
+  erb :painter, layout: :paint_control
+
 end
 
-post '/translated' do
+post '/paint' do
+  puts params
   @uncolored_text = params[:uncolored_text].gsub(/\s/,"").split(//)
+  puts @uncolored_text
   @colors = @@colors
-  erb :painter
+  erb :painter, layout: :paint_control
 end
 
-get "/something" do
-  erb :signup
-end
+# get "/something" do
+#   erb :signup
+# end
 
-get "/api/translated_js" do
-  json @@colors
-end
+# get "/api/translated_js" do
+#   json @@colors
+# end

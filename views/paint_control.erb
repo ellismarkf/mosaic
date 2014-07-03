@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Transliteratr</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/transliterator.css">
+    </head>
+    <body class="cf">
+
+      <div class="controlPanel">
+        <h1>transliteratr.</h1>
+        <form method="post" action="/paint">
+          <input type="textarea" name="uncolored_text" placeholder="Enter some text.">
+          <select name="palettes">
+            <option name="random" value="random">Random</option>
+            <option name="midnight" value="midnight">Midnight</option>
+            <option name="spring" value="spring">Spring</option>
+          </select>
+          <select name="shape">
+            <option name="square" value="square">Square</option>
+            <option name="circle" value="circle">Circle</option>
+            <option name="triangle" value="triangle">Triangle</option>
+          </select>
+        </form>
+      </div>
+      <div class="canvas">
+        <%= yield %>
+      </div>
+
+
+
+
+
+
+
+
+      <script type="text/javascript" src="/js/jquery.min.js"></script>
+      <script type="text/javascript" src="/js/business-logic.js"></script>
+    </body>
+</html>
