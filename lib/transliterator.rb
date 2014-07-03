@@ -12,6 +12,6 @@ require_relative 'transliterator/databases/database.rb'
 require_relative 'transliterator/scripts/capture_text.rb'
 
 #assets
-require_relative 'color_hash.rb'
+require_relative '../public/js/color_hash.rb'
 
-Mosaic::ORM.new
+Transliterator::ORM.new

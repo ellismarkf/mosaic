@@ -41,6 +41,27 @@ module Transliterator
 
     end
 
+    def create_user(username, password_digest)
+      result = @db.exec_params(%q[
+        INSERT INTO users (username, password_digest)
+        VALUES ($1, $2)
+        RETURNING id;], [username, password_digest])
+    end
+
+    def create_museum(user_id)
+      result = @db.exec_params(%q[
+        INSERT INTO users (user_id)
+        VALUES ($1)
+        RETURNING id;], [user_id])
+    end
+
+    def create_mosaic(user_id, name)
+      result = @db.exec_params(%q[
+        INSERT INTO users (user_id, name)
+        VALUES ($1, $2)
+        RETURNING id;], [user_id, name])
+    end
+
 
   end
 

@@ -1,0 +1,12 @@
+<form method="post" action="/translated">
+  <input type="text" name="uncolored_text">
+</form>
+
+<% if !@uncolored_text.empty? %>
+  <div class="cf frame">
+    <% @uncolored_text.each do |letter| %>
+      <span class="cell" style="background: <%= @colors[letter] %>"></span>
+    <% end %>
+  </div>
+<% end %>
+<div></div>

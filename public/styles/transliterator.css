@@ -1,0 +1,22 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.frame {
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+.cell {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  float: left;
+}
