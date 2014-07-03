@@ -240,10 +240,6 @@ th {
   border: none;
   box-shadow: 1px 1px 1px #26589b;
 }
-.controlPanel input.placeholder {
-  font-family: 'Merriweather', serif;
-  font-size: 1rem;
-}
 .controlPanel select {
   display: block;
   width: 30%;
@@ -253,3 +249,14 @@ th {
   width: 75%;
   float: right;
 }
+.quote h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: #42a7d3;
+  text-align: center;
+}
+
+
+
+
+

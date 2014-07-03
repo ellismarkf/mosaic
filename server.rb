@@ -37,6 +37,7 @@ end
 
 post '/paint' do
   puts params
+  @original_text = params[:uncolored_text]
   @uncolored_text = params[:uncolored_text].gsub(/\s/,"").split(//)
   puts @uncolored_text
   @colors = @@colors
