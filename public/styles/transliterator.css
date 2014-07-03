@@ -209,6 +209,25 @@ th {
   height: 10px;
   float: left;
 }
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  float: left;
+  border-radius: 1000px;
+}
+.small {
+  width: 10px;
+  height: 10px;
+}
+.medium {
+  width: 100px;
+  height: 100px;
+}
+.large {
+  width: 175px;
+  height: 175px;
+}
 
 .controlPanel {
   width: 25%;

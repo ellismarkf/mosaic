@@ -10,6 +10,8 @@ configure do
   stored = Transliterator::ColorHash.new
   # binding.pry
   @@colors = stored.colors
+  @@midnight = stored.midnight
+  @@spring = stored.spring
 end
 
 get '/' do
@@ -39,8 +41,11 @@ post '/paint' do
   puts params
   @original_text = params[:uncolored_text]
   @uncolored_text = params[:uncolored_text].gsub(/\s/,"").split(//)
-  puts @uncolored_text
-  @colors = @@colors
+  case params[:palettes]
+    when 'random' then @colors = @@colors
+    when 'midnight' then @colors = @@midnight
+    when 'spring' then @colors = @@spring
+  end
   erb :painter, layout: :paint_control
 end
 

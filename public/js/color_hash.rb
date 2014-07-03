@@ -2,9 +2,11 @@ require 'yaml'
 
 module Transliterator
   class ColorHash
-    attr_reader :colors
+    attr_reader :colors, :midnight, :spring
     def initialize
       @colors = YAML.load_file('public/js/colors.yml')
+      @midnight = YAML.load_file('public/js/midnight.yml')
+      @spring = YAML.load_file('public/js/spring.yml')
     end
   end
 end
