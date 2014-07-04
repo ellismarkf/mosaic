@@ -7,9 +7,9 @@
     <% if @shape == 'triangle' %>
       <% @uncolored_text.each_with_index do |letter, index| %>
         <% if !index.even? %>
-          <span class="triangle_up" style="border-bottom-color: <%= @colors[letter] %> "></span>
+          <span class="<%= @shape %> <%= @size %> <%= @magical %> up" style="border-bottom-color: <%= @colors[letter] %>; width: 0px; height: 0px;"></span>
         <% else %>
-          <span class="triangle_down" style="border-top-color: <%= @colors[letter] %> "></span>
+          <span class="<%= @shape %> <%= @size %> <%= @magical %> down" style="border-top-color: <%= @colors[letter] %>; width: 0px; height: 0px;"></span>
         <% end %>
       <% end %>
     <% else %>

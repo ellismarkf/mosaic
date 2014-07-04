@@ -200,7 +200,6 @@ th {
 .frame {
   width: 80%;
   margin: 65px auto 40px;
-
 }
 
 .square {
@@ -216,23 +215,46 @@ th {
   float: left;
   border-radius: 1000px;
 }
-.triangle_down {
+.triangle {
   display: inline-block;
-  width: 0;
-  height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 14px solid red;
-  margin: 0px -13px;
+  margin: 0 -3.5px;
+  float: left;
 }
-.triangle_up {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 14px solid red;
-  margin-bottom: -4px;
+.up {
+  border-bottom: 14px solid transparent;
+}
+.down {
+  border-top: 14px solid transparent;
+}
+.magical.triangle.up.small {
+  opacity: .7;
+  margin: 0px -5px;
+}
+.magical.triangle.down.small {
+  opacity: .7;
+  margin: 0px -5px;
+}
+.medium.triangle.up {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid transparent;
+  margin: 0px -25px;
+}
+.medium.triangle.down {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid transparent;
+  margin: 0 -25px;
+}
+.magical.triangle.up.medium {
+  opacity: .7;
+  margin: 0px -30px;
+}
+.magical.triangle.down.medium {
+  opacity: .7;
+  margin: 0px -30px;
 }
 .small {
   width: 10px;
@@ -247,12 +269,17 @@ th {
   height: 175px;
 }
 .magical {
-  display: inline-block;
-  float: left;
   opacity: .7;
   margin: -1px;
 }
-
+.magical.medium {
+  margin: -15px;
+}
+.frame span {
+  font-family: 'Merriweather', serif;
+  font-size: .3rem;
+  color: white;
+}
 .controlPanel {
   width: 25%;
   height: 100%;
@@ -260,6 +287,7 @@ th {
   position: fixed;
   background-color: #42a7d3;
   box-shadow: 1px 0px 10px 1px #ccc;
+  overflow: scroll;
 }
 .controlPanel h1, .title {
   font-family: 'Merriweather', serif;
@@ -392,6 +420,22 @@ th {
   box-shadow: 1px 1px 1px #27586b;
   border-radius: 5px;
   margin-top: 45px;
+}
+.test {
+  display: block;
+  width: 75%;
+  height: 500px;
+  margin: 0px auto 50px;
+  background-color: white;
+}
+.colophon {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  color: #00A3E5;
+  font-size: .6rem;
+  position: absolute;
+  bottom: 30px;
+  left: 41%;
 }
 
 

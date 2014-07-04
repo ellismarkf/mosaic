@@ -13,7 +13,7 @@
       <div class="controlPanel">
         <h1>transliteratr.</h1>
         <form method="post" action="/paint">
-          <textarea name="uncolored_text" placeholder="Enter some text. Try a passage from your favorite novel!" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }"></textarea>
+          <textarea name="uncolored_text" placeholder="Enter some text and press enter. Try a passage from your favorite novel!" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }"></textarea>
           <select name="palettes">
             <option name="random" value="random">Random</option>
             <option name="midnight" value="midnight">Midnight</option>
@@ -33,6 +33,7 @@
         <form class="signout" method="post" action='/signout'>
           <input type="submit" name="signout" value="Sign Out">
         </form>
+        <div class="test"></div>
       </div>
       <div class="canvas">
         <%= yield %>
