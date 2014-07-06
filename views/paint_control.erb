@@ -15,6 +15,7 @@
         <form method="post" action="/paint">
           <textarea name="uncolored_text" placeholder="Enter some text and press enter. Try a passage from your favorite novel!" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }"></textarea>
           <select name="palettes">
+            <option name="original" value="original">Original</option>
             <option name="random" value="random">Random</option>
             <option name="midnight" value="midnight">Midnight</option>
             <option name="spring" value="spring">Spring</option>

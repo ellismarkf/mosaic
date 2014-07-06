@@ -11,6 +11,7 @@ enable :sessions
 configure do
   stored = Transliterator::ColorHash.new
   # binding.pry
+  @@random = stored.random
   @@colors = stored.colors
   @@midnight = stored.midnight
   @@spring = stored.spring
@@ -50,11 +51,9 @@ end
 
 post '/login' do
   result = Transliterator::SignIn.run(params)
-  p result[:success?]
 
   if result[:success?]
     session[:username] = result[:username]
-    p session
     redirect to '/'
   else
     redirect to '/signup'
@@ -77,13 +76,13 @@ get '/paint' do
 end
 
 post '/paint' do
-  puts params
   @original_text = params[:uncolored_text]
   @uncolored_text = params[:uncolored_text].gsub(/\s/,"").split(//)
   case params[:palettes]
-    when 'random' then @colors = @@colors
+    when 'original' then @colors = @@colors
     when 'midnight' then @colors = @@midnight
     when 'spring' then @colors = @@spring
+    when 'random' then @colors = Transliterator::Randomizer.run
   end
   @shape = params[:shape]
   @size = params[:size]

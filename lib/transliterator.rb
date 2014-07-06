@@ -12,6 +12,7 @@ require_relative 'transliterator/databases/database.rb'
 require_relative 'transliterator/scripts/capture_text.rb'
 require_relative 'transliterator/scripts/signup.rb'
 require_relative 'transliterator/scripts/sign_in.rb'
+require_relative 'transliterator/scripts/color_randomizer.rb'
 
 #assets
 require_relative '../public/js/color_hash.rb'

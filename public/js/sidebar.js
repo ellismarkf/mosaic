@@ -1,4 +1,4 @@
-
+(function(){
 // SIDEBAR EVENT LISTENTERS
     $(document).ready(function() {
 
@@ -64,3 +64,5 @@
       }).on('blur', function() {
         $(this).val('');
       });
+
+}();
