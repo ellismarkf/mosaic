@@ -11,14 +11,10 @@ enable :sessions
 configure do
   stored = Transliterator::ColorHash.new
   # binding.pry
-<<<<<<< HEAD
   @@random = stored.random
   @@colors = stored.colors
   @@midnight = stored.midnight
   @@spring = stored.spring
-=======
-  @@colors = stored.spring
->>>>>>> 658da7b890cd1e85d5bd6f108b4e3fe896d048d3
 end
 
 get '/' do
