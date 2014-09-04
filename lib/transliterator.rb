@@ -6,6 +6,7 @@ require_relative 'transliterator/entities/mosaic.rb'
 require_relative 'transliterator/entities/museum.rb'
 
 #database
+require_relative 'transliterator/databases/environments.rb'
 require_relative 'transliterator/databases/database.rb'
 
 #scripts
