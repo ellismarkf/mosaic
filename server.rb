@@ -18,55 +18,50 @@ configure do
 end
 
 get '/' do
-  if session[:username]
-    user = Transliterator.orm.get_user(session[:username])
     @uncolored_text = []
     @colors = @@colors
     erb :painter, layout: :paint_control
-  else
-    erb :signup
-  end
 end
 
-get '/signup' do
-  erb :signup
-end
+# get '/signup' do
+#   erb :signup
+# end
 
-post '/signup' do
-  p params
-  result = Transliterator::SignUp.run(params)
-
-
-  if result[:success?]
-    session[:username] = result[:username]
-    redirect to '/'
-  else
-    redirect to '/login'
-  end
-end
-
-get '/login' do
-  erb :login
-end
-
-post '/login' do
-  result = Transliterator::SignIn.run(params)
-
-  if result[:success?]
-    session[:username] = result[:username]
-    redirect to '/'
-  else
-    redirect to '/signup'
-  end
-
-end
+# post '/signup' do
+#   p params
+#   result = Transliterator::SignUp.run(params)
 
 
+#   if result[:success?]
+#     session[:username] = result[:username]
+#     redirect to '/'
+#   else
+#     redirect to '/login'
+#   end
+# end
 
-post '/signout' do
-  session.clear
-  redirect '/login'
-end
+# get '/login' do
+#   erb :login
+# end
+
+# post '/login' do
+#   result = Transliterator::SignIn.run(params)
+
+#   if result[:success?]
+#     session[:username] = result[:username]
+#     redirect to '/'
+#   else
+#     redirect to '/signup'
+#   end
+
+# end
+
+
+
+# post '/signout' do
+#   session.clear
+#   redirect '/login'
+# end
 
 get '/paint' do
   @uncolored_text = []
