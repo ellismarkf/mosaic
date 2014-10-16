@@ -12,4 +12,14 @@ Transliteratr takes user-inputted text and transforms it into a mosaic of tiles,
 
 One of the compelling color palette options is a random color palette, which is algorithmically generated every time a user submits the text to be translated. The algorithm defines a random RGB value to every character member of a YAML file, whose contents are passed via Sinatra route parameters to the "canvas," where the actual construction of the mosaic is handled by an ERB script.
 
+The app was built in a weekend as a MakerSquare senior project with:
+
+ * Ruby
+ * Sinatra
+ * HTML5
+ * CSS3
+ * YAML
+ * ERB
+ * SASS
+
 [Try it out!](http://transliteratr.herokuapp.com/)
